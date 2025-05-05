@@ -6,6 +6,8 @@ import ThirdSection from './ThirdSection/ThirdSection'
 import FourthSection from './FourthSection/FourthSection'
 import FifthSection from './FifthSection/FifthSection'
 import SixthSection from './SixthSection/SixthSection'
+// import YouTubeVideos from './YouTubeVideos/YouTubeVideos'
+import YouTubeVideosWithPromise from './YouTubeVideos/YoutubeVideosWithPromise'
 
 function Sections() {
   return (
@@ -17,6 +19,8 @@ function Sections() {
          <FourthSection/>
          <FifthSection/>
          <SixthSection/>
+         {/* <YouTubeVideos/> */}
+         <YouTubeVideosWithPromise/>
     </>
   )
 }

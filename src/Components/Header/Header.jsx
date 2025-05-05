@@ -1,8 +1,9 @@
-import React from 'react';
-import './Header.css';
-import Logo from '../../Common-resource/images/icons/logo-sm.png';
-import Search from '../../Common-resource/images/icons/search-icon-sm.png';
-import Cart from '../../Common-resource/images/icons/cart-sm.png';
+import React from "react";
+import "./Header.css";
+import Logo from "../../Common-resource/images/icons/logo-sm.png";
+import Search from "../../Common-resource/images/icons/search-icon-sm.png";
+import Cart from "../../Common-resource/images/icons/cart-sm.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,9 +11,9 @@ const Header = () => {
       <div className="nav-wrapper fixed-top">
         <div className="container">
           <nav className="navbar navbar-expand-md">
-            <a className="navbar-brand mx-auto" href="#">
+            <Link className="navbar-brand mx-auto" to="/">
               <img src={Logo} alt="Logo" />
-            </a>
+            </Link>
             <button
               className="navbar-toggler navbar-toggler-right"
               type="button"
@@ -27,49 +28,49 @@ const Header = () => {
             <div className="navbar-collapse collapse" id="navbarCollapse">
               <ul className="navbar-nav nav-justified w-100 nav-fill">
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/mac/">
+                  <Link className="nav-link js-scroll-trigger" to="/mac">
                     Mac
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#">
+                  <Link className="nav-link js-scroll-trigger" to="iPhone">
                     iPhone
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#">
+                  <Link className="nav-link js-scroll-trigger" to="iPad">
                     iPad
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#">
+                  <Link className="nav-link js-scroll-trigger" to="watch">
                     Watch
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#">
+                  <Link className="nav-link js-scroll-trigger" to="tv">
                     TV
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#">
+                  <Link className="nav-link js-scroll-trigger" to="music">
                     Music
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="#">
+                  <Link className="nav-link js-scroll-trigger" to="support">
                     Support
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/search/">
+                  <Link className="nav-link js-scroll-trigger" to="/search">
                     <img src={Search} alt="Search" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link js-scroll-trigger" href="/cart/">
+                  <Link className="nav-link js-scroll-trigger" to="/cart">
                     <img src={Cart} alt="Cart" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
